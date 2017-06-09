@@ -1,8 +1,23 @@
 #+TITLE: Game Theory 2017
 #+AUTHOR: Christoph Schottmüller
 
-* Uncertainty and risk
-** Lecture 1: Intro expected utility theorem 
+* Organization
+Lectures: Thursday 10:00-13:00 in 35-3-12 (apart from first lecture which is in 26.2.21)
+
+If you have not taken Micro C (or forgotten most of it...), you should (re-)read chapters 1.1-1.3.A, 2.1 and 3.1, 3.2 in Robert Gibbons' Game Theory book before the course starts.
+
+** Midterm
+The midterm is a take home exam. You have to pass the midterm in order to be admitted to the final exam. The midterm should be done in groups of up to three people.  You have the weeks 42 and 43 (last two weeks of October) to work on the midterm. 
+# The midterm exercises are here: [[./midterm.pdf][Midterm]]
+
+# Here is a [[./Holdliste Game Theory web.xlsx][list]] with students that are admitted to the final exam. Please, check whether you are on it and contact me if you are not (though you think you should).
+
+** Final Exam
+The final is an oral exam (with 20 minutes closed book preparation time). 
+
+* Lecture Plan
+** Uncertainty and risk
+*** Lecture 1: Intro expected utility theorem 
 - Introduction
 - What is GT? 
 - expected utility theorem
@@ -10,71 +25,95 @@
 # python: exercise lottery competition
 
  
-* Solution concepts
-** Lecture 2: NE
+** Solution concepts
+*** Lecture 2: NE
 - Fixed point theorems
 - Nash existence theorem
 - reading: MSZ 5.3, (supplementary reading: OR 2.4; a proof of Brouwer's fixed point theorem can be found in MSZ 23.1 but reading this proof is by no means necessary)
  # python: function that does the steps in the proof of Nash theorem (=fixed point solver?)
  
-** Lecture 3: Rationalizability and dominance
+*** Lecture 3: Rationalizability and dominance
 - Rationalizability and iterated elimination of dominated strategies
 - reading: OR 4 or MSZ 4.5, 4.7, 4.11, 
  # python: iterative elimination of strictly dominated strategies in finite games and in Cournot (graphical)
 
-** Lecture 4: Correlated equilibrium
+*** Lecture 4: Correlated equilibrium
 - Correlated equilibrium
 - reading: OR 3.3 or MSZ 8 
  # python: correlated equilibrium solver
 
-** Lecture 5: Risk preferences 
+*** Lecture 5: Risk preferences 
 - risk preferences
 - impact of risk attitudes on the equilibrium set
 - reading: MWG 6.C or MSZ 2.7-2.8, Weinstein (2016)
 
 - reading: MSZ 7.3.2 or OR 12.5.2; (OR 11.1 and 11.4)
 
-** Lecture 6: Supermodular games: when solution concepts coincide
+*** Lecture 6: Supermodular games: when solution concepts coincide
 - Amir (2005), (supplementary reading: Milgrom and Roberts (1990))
  # python:??
 
-* Knowledge
+** Knowledge
 
-** Lecture 7: Knowledge I
+*** Lecture 7: Knowledge I
 - Hat game
 - Aumann model
 - reading: OR 5.1-5.2 (or MSZ 9.1)
  # python: check whether event F is common knowledge in state w
 
-** Lecture 8: Knowledge II
+*** Lecture 8: Knowledge II
 - No agree to disagree
 - (Common) knowledge and solution concepts
 - Electronic mail game
-** reading: OR 5.3-5.5 (or MSZ 9.2)
+- reading: OR 5.3-5.5 (or MSZ 9.2)
 # python: ? sth about email game proof or induction ?
 
 
-** Lecture 9: Global Games I
+*** Lecture 9: Global Games I
 - stag hunt
 - reading: Carlson and van Damme (p. 989-993)
  # python: iterative elimination of strictly dominated strategies in stag hunt
 
-** Lecture 10: Global Games II
+*** Lecture 10: Global Games II
 - private and public signal
 - reading: Morris and Shin (2001)
 
-* Matching
+** Matching
 
-** Lecture 11:  Deferred acceptance algorithm
+*** Lecture 11:  Deferred acceptance algorithm
 - reading: Gale and Shapley (1962)
 
-** Lecture 12: School Choice
+*** Lecture 12: School Choice
 - top trading cycles algorithm
 - reading: Abdulkadiroglu and  Sönmez (2003)
 
-** Lecture 13: Assignment problems
+*** Lecture 13: Assignment problems
 - position auctions
--  reading: Varian (2007), (supplementary: Shapley and Shubik (1971))
+- reading: Varian (2007), (supplementary: Shapley and Shubik (1971))
+
+* Material
+
+** Handouts
+- [[./math_gt.pdf][Math]] for Game Theory
+- [[./gt_notation.pdf][Notation]] and preliminaries
+
+** Lecture slides
+- L01: [[https://schottmueller.github.io/gt/L01_expectedU/lecture01_expected_utility.pdf][slides]], [[https://schottmueller.github.io/gt//L01_expectedU/lottery_comp.html][extra]]
+# - L02: [[./L02_gamesNE/strategic_form_games.pdf ][slides]], [[./L02_gamesNE/Nash_eq_solver2.html][extra]]
+- L02: [[https://schottmueller.github.io/gt/L03_NashThm/Nash_thm.pdf ][slides]], [[https://schottmueller.github.io/gt/L03_NashThm/Nash_Brouwer.html][extra]]
+- L03: [[https://schottmueller.github.io/gt/L04_rationalizability/ratio.pdf][slides]], [[https://schottmueller.github.io/gt/L04_rationalizability/rationalizability.html][extra]]
+- L04: [[https://schottmueller.github.io/gt/L05_correlated_eq/corr_eq.pdf][slides]], [[https://schottmueller.github.io/gt/L05_correlated_eq/correlated_eq_solver_.html][extra]]
+- L05: risk prefs, tba
+- L06: [[https://schottmueller.github.io/gt/L06_supermodular/supermodular.pdf][slides]], [[https://schottmueller.github.io/gt/L06_supermodular/iasus.html][extra]]
+- L07/08: [[https://schottmueller.github.io/gt/L10_11_knowledge/knowledge.pdf][slides]], [[https://schottmueller.github.io/gt/L10_11_knowledge/knowledge.html][extra]]
+- L09: [[https://schottmueller.github.io/gt/L12_global/global_games.pdf][slides]], [[https://schottmueller.github.io/gt/L12_global/global_iter.html][extra]]
+- L10: GG II, tba
+- L11: [[https://github.com/KUGameTheory/gt2017/files/1064705/stable_matching.pdf][slides]]
+- L12: [[https://github.com/KUGameTheory/gt2017/files/1064703/school_choice.pdf][slides]]
+- L13: tba
+
+The extra material is for your pleasure and entertainment and not relevant for the exam. The code you find in there is written in Python (there are literally hundreds of Python guides on the web if you are interested).
+
 
 * Bibliography
 OR: Osborne and Rubinstein 1994; A course in game theory; MIT Press (available as free ebook on the author's [[http://books.osborne.economics.utoronto.ca/][website]])
