@@ -1,0 +1,112 @@
+
+* Uncertainty and risk
+** Lecture 1: Intro expected utility theorem 
+*** Introduction
+*** What is GT? 
+*** expected utility theorem
+*** reading:  MSZ 2.1-2.5 or MWG 6.A-6.B, (supplementary reading: Gilboa et al.  (2014))
+# python: exercise lottery competition
+
+ 
+* Solution concepts
+** Lecture 2: NE
+*** Fixed point theorems
+*** Nash existence theorem
+*** reading: MSZ 5.3, (supplementary reading: OR 2.4; a proof of Brouwer's fixed point theorem can be found in MSZ 23.1 but reading this proof is by no means necessary)
+ # python: function that does the steps in the proof of Nash theorem (=fixed point solver?)
+ 
+** Lecture 3: Rationalizability and dominance
+*** Rationalizability and iterated elimination of dominated strategies
+*** reading: OR 4 or MSZ 4.5, 4.7, 4.11, 
+ # python: iterative elimination of strictly dominated strategies in finite games and in Cournot (graphical)
+
+** Lecture 4: Correlated equilibrium
+*** Correlated equilibrium
+*** reading: OR 3.3 or MSZ 8 
+ # python: correlated equilibrium solver
+
+** Lecture 5: Risk preferences 
+*** risk preferences
+*** impact of risk attitudes on the equilibrium set
+*** reading: MWG 6.C or MSZ 2.7-2.8, Weinstein (2016)
+
+*** reading: MSZ 7.3.2 or OR 12.5.2; (OR 11.1 and 11.4)
+
+** Lecture 6: Supermodular games: when solution concepts coincide
+*** Amir (2005), (supplementary reading: Milgrom and Roberts (1990))
+ # python:??
+
+* Knowledge
+
+** Lecture 7: Knowledge I
+*** Hat game
+*** Aumann model
+*** reading: OR 5.1-5.2 (or MSZ 9.1)
+ # python: check whether event F is common knowledge in state w
+
+** Lecture 8: Knowledge II
+*** No agree to disagree
+*** (Common) knowledge and solution concepts
+*** Electronic mail game
+** reading: OR 5.3-5.5 (or MSZ 9.2)
+# python: ? sth about email game proof or induction ?
+
+
+** Lecture 9: Global Games I
+*** stag hunt
+*** reading: Carlson and van Damme (p. 989-993)
+ # python: iterative elimination of strictly dominated strategies in stag hunt
+
+** Lecture 10: Global Games II
+*** private and public signal
+*** reading: Morris and Shin (2001)
+
+* Matching
+
+** Lecture 11:  Deferred acceptance algorithm
+*** reading: Gale and Shapley (1962)
+
+** Lecture 12: School Choice
+*** top trading cycles algorithm
+*** reading: Abdulkadiroglu and  Sönmez (2003)
+
+** Lecture 13: Assignment problems
+*** position auctions
+*** reading: Varian (2007), (supplementary: Shapley and Shubik (1971))
+
+* Bibliography
+OR: Osborne and Rubinstein 1994; A course in game theory; MIT Press (available as free ebook on the author's [[http://books.osborne.economics.utoronto.ca/][website]])
+
+MSZ: Maschler, Salon and Zamir 2013; Game theory; Cambridge University Press (KU library [[http://dx.doi.org.ep.fjernadgang.kb.dk/10.1017/CBO9780511794216][link]])
+
+MWG: MasColell, Whinston and Green 1995; Microeconomic theory; Oxford University Press
+
+FT: Fudenberg and Tirole 1991; Game theory; MIT Press
+
+Abdulkadiroglu, Atila, and Tayfun Sönmez. "School choice: A mechanism design approach." The American Economic Review 93.3 (2003): 729-747.
+
+Amir, Rabah. "Supermodularity and complementarity in economics: an elementary survey", Southern Economic Journal, Vol. 71, No. 3 (2005): 636-660. [[https://www.jstor.org/stable/20062066][link]]
+
+Aumann 1985: What is game theory trying to accomplish?; Frontiers of Economics; [[http://www.ma.huji.ac.il/~raumann/pdf/what%20is%20game%20theory.pdf][link]]
+
+Carlson and van Damme "Global Games and Equilibrium Selection", Econometrica, Vol. 61, No. 5 (Sep., 1993), pp. 989-1018;  [[http://www.jstor.org.ep.fjernadgang.kb.dk/stable/2951491][link]]
+
+Gale, David, and Lloyd S. Shapley. "College admissions and the stability of marriage." The American Mathematical Monthly 69.1 (1962): 9-15. [[http://www.jstor.org/stable/2312726][link]]
+
+Gilboa, Itzhak, et al. "Economic models as analogies." The Economic Journal 124.578 (2014): pp.513-533. [[http://onlinelibrary.wiley.com/doi/10.1111/ecoj.12128/full][link]]
+
+Jann, Ole, and Christoph Schottmüller. "Correlated equilibria in homogeneous good Bertrand competition." Journal of Mathematical Economics 57 (2015): 31-37. [[http://dx.doi.org/10.1016/j.jmateco.2015.01.005][link]]
+
+Milgrom and Roberts “Rationalizability, Learning, and Equilibrium in Games with Strategic Complementarities”, Econometrica, Vol. 58, No. 6. (Nov., 1990), pp. 1255-1277; [[http://www.jstor.org.ep.fjernadgang.kb.dk/stable/2938316][link]]
+
+Morris and Shin "Global Games: Theory and Applications", Econometric Society Monographs 35, 2003, 56-114 - Cambridge University Press; [[https://www.princeton.edu/~smorris/pdfs/paper_36_Global_Games.pdf][link]]
+
+Morris, Stephen, and Hyun Song Shin. "Unique equilibrium in a model of self-fulfilling currency attacks." American Economic Review, Vol. 88, No. 3 (1998): 587-597. [[http://www.jstor.org/stable/116850 ][link]]
+
+Morris, S. and H. S. Shin (2001). Rethinking multiple equilibria in macroeconomicmodeling. In NBER Macroeconomics Annual 2000, Volume 15, pp. 139–182. MIT Press. [[https://www.nber.org/chapters/c11056][link]]
+
+Shapley, L. S. and M. Shubik (1971). The assignment game i: The core. International Journal of Game Theory 1 (1), 111–130.
+
+Varian, Hal R. "Position auctions." International Journal of industrial Organization 25.6 (2007): 1163-1178. [[https://doi.org/10.1016/j.ijindorg.2006.10.002][link]]
+
+Weinstein, Jonathan. "The Effect of Changes in Risk Attitude on Strategic Behavior." Econometrica 84.5 (2016): 1881-1902. [[http://onlinelibrary.wiley.com/doi/10.3982/ECTA13948/full][link]]
