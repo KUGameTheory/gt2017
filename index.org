@@ -1,78 +1,80 @@
+#+TITLE: Game Theory 2017
+#+AUTHOR: Christoph Schottmüller
 
 * Uncertainty and risk
 ** Lecture 1: Intro expected utility theorem 
-*** Introduction
-*** What is GT? 
-*** expected utility theorem
-*** reading:  MSZ 2.1-2.5 or MWG 6.A-6.B, (supplementary reading: Gilboa et al.  (2014))
+- Introduction
+- What is GT? 
+- expected utility theorem
+- reading:  MSZ 2.1-2.5 or MWG 6.A-6.B, (supplementary reading: Gilboa et al.  (2014))
 # python: exercise lottery competition
 
  
 * Solution concepts
 ** Lecture 2: NE
-*** Fixed point theorems
-*** Nash existence theorem
-*** reading: MSZ 5.3, (supplementary reading: OR 2.4; a proof of Brouwer's fixed point theorem can be found in MSZ 23.1 but reading this proof is by no means necessary)
+- Fixed point theorems
+- Nash existence theorem
+- reading: MSZ 5.3, (supplementary reading: OR 2.4; a proof of Brouwer's fixed point theorem can be found in MSZ 23.1 but reading this proof is by no means necessary)
  # python: function that does the steps in the proof of Nash theorem (=fixed point solver?)
  
 ** Lecture 3: Rationalizability and dominance
-*** Rationalizability and iterated elimination of dominated strategies
-*** reading: OR 4 or MSZ 4.5, 4.7, 4.11, 
+- Rationalizability and iterated elimination of dominated strategies
+- reading: OR 4 or MSZ 4.5, 4.7, 4.11, 
  # python: iterative elimination of strictly dominated strategies in finite games and in Cournot (graphical)
 
 ** Lecture 4: Correlated equilibrium
-*** Correlated equilibrium
-*** reading: OR 3.3 or MSZ 8 
+- Correlated equilibrium
+- reading: OR 3.3 or MSZ 8 
  # python: correlated equilibrium solver
 
 ** Lecture 5: Risk preferences 
-*** risk preferences
-*** impact of risk attitudes on the equilibrium set
-*** reading: MWG 6.C or MSZ 2.7-2.8, Weinstein (2016)
+- risk preferences
+- impact of risk attitudes on the equilibrium set
+- reading: MWG 6.C or MSZ 2.7-2.8, Weinstein (2016)
 
-*** reading: MSZ 7.3.2 or OR 12.5.2; (OR 11.1 and 11.4)
+- reading: MSZ 7.3.2 or OR 12.5.2; (OR 11.1 and 11.4)
 
 ** Lecture 6: Supermodular games: when solution concepts coincide
-*** Amir (2005), (supplementary reading: Milgrom and Roberts (1990))
+- Amir (2005), (supplementary reading: Milgrom and Roberts (1990))
  # python:??
 
 * Knowledge
 
 ** Lecture 7: Knowledge I
-*** Hat game
-*** Aumann model
-*** reading: OR 5.1-5.2 (or MSZ 9.1)
+- Hat game
+- Aumann model
+- reading: OR 5.1-5.2 (or MSZ 9.1)
  # python: check whether event F is common knowledge in state w
 
 ** Lecture 8: Knowledge II
-*** No agree to disagree
-*** (Common) knowledge and solution concepts
-*** Electronic mail game
+- No agree to disagree
+- (Common) knowledge and solution concepts
+- Electronic mail game
 ** reading: OR 5.3-5.5 (or MSZ 9.2)
 # python: ? sth about email game proof or induction ?
 
 
 ** Lecture 9: Global Games I
-*** stag hunt
-*** reading: Carlson and van Damme (p. 989-993)
+- stag hunt
+- reading: Carlson and van Damme (p. 989-993)
  # python: iterative elimination of strictly dominated strategies in stag hunt
 
 ** Lecture 10: Global Games II
-*** private and public signal
-*** reading: Morris and Shin (2001)
+- private and public signal
+- reading: Morris and Shin (2001)
 
 * Matching
 
 ** Lecture 11:  Deferred acceptance algorithm
-*** reading: Gale and Shapley (1962)
+- reading: Gale and Shapley (1962)
 
 ** Lecture 12: School Choice
-*** top trading cycles algorithm
-*** reading: Abdulkadiroglu and  Sönmez (2003)
+- top trading cycles algorithm
+- reading: Abdulkadiroglu and  Sönmez (2003)
 
 ** Lecture 13: Assignment problems
-*** position auctions
-*** reading: Varian (2007), (supplementary: Shapley and Shubik (1971))
+- position auctions
+-  reading: Varian (2007), (supplementary: Shapley and Shubik (1971))
 
 * Bibliography
 OR: Osborne and Rubinstein 1994; A course in game theory; MIT Press (available as free ebook on the author's [[http://books.osborne.economics.utoronto.ca/][website]])
