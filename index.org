@@ -47,7 +47,6 @@ The final is an oral exam (with 20 minutes closed book preparation time).
 - impact of risk attitudes on the equilibrium set
 - reading: MWG 6.C or MSZ 2.7-2.8, Weinstein (2016)
 
-- reading: MSZ 7.3.2 or OR 12.5.2; (OR 11.1 and 11.4)
 
 *** Lecture 6: Supermodular games: when solution concepts coincide
 - Amir (2005), (supplementary reading: Milgrom and Roberts (1990))
@@ -94,8 +93,8 @@ The final is an oral exam (with 20 minutes closed book preparation time).
 * Material
 
 ** Handouts
-- [[./math_gt.pdf][Math]] for Game Theory
-- [[./gt_notation.pdf][Notation]] and preliminaries
+- [[https://schottmueller.github.io/gt/math_gt.pdf][Math]] for Game Theory
+- [[https://schottmueller.github.io/gt/gt_notation.pdf][Notation]] and preliminaries
 
 ** Lecture slides
 - L01: [[https://schottmueller.github.io/gt/L01_expectedU/lecture01_expected_utility.pdf][slides]], [[https://schottmueller.github.io/gt//L01_expectedU/lottery_comp.html][extra]]
@@ -108,11 +107,11 @@ The final is an oral exam (with 20 minutes closed book preparation time).
 - L07/08: [[https://schottmueller.github.io/gt/L10_11_knowledge/knowledge.pdf][slides]], [[https://schottmueller.github.io/gt/L10_11_knowledge/knowledge.html][extra]]
 - L09: [[https://schottmueller.github.io/gt/L12_global/global_games.pdf][slides]], [[https://schottmueller.github.io/gt/L12_global/global_iter.html][extra]]
 - L10: GG II, tba
-- L11: [[https://github.com/KUGameTheory/gt2017/files/1064705/stable_matching.pdf][slides]]
+- L11: [[https://github.com/KUGameTheory/gt2017/files/1064705/stable_matching.pdf][slides]] [[https://github.com/schottmueller/gametheory/blob/master/matching.org][extra]]
 - L12: [[https://github.com/KUGameTheory/gt2017/files/1064703/school_choice.pdf][slides]]
 - L13: tba
 
-The extra material is for your pleasure and entertainment and not relevant for the exam. The code you find in there is written in Python (there are literally hundreds of Python guides on the web if you are interested).
+The "extra" material is for your pleasure and entertainment and not relevant for the exam. The code you find in there is written in Python (there are literally hundreds of Python guides on the web if you are interested, e.g. https://lectures.quantecon.org/py/).
 
 
 * Bibliography
