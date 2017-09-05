@@ -99,7 +99,7 @@ The final is an oral exam (with 20 minutes closed book preparation time).
 - [[https://schottmueller.github.io/gt/gt_notation.pdf][Notation]] and preliminaries
 
 ** Lecture slides
-- L01: [[https://schottmueller.github.io/gt/L01_expectedU/lecture01_expected_utility.pdf][slides]], [[https://schottmueller.github.io/gt//L01_expectedU/lottery_comp.html][extra]]
+- L01: [[https://github.com/KUGameTheory/gt2017/files/1277741/lecture01_expected_utility.pdf][slides]], [[https://schottmueller.github.io/gt//L01_expectedU/lottery_comp.html][extra]]
 # - L02: [[./L02_gamesNE/strategic_form_games.pdf ][slides]], [[./L02_gamesNE/Nash_eq_solver2.html][extra]]
 - L02: [[https://schottmueller.github.io/gt/L03_NashThm/Nash_thm.pdf ][slides]], [[https://schottmueller.github.io/gt/L03_NashThm/Nash_Brouwer.html][extra]]
 - L03: [[https://schottmueller.github.io/gt/L04_rationalizability/ratio.pdf][slides]], [[https://schottmueller.github.io/gt/L04_rationalizability/rationalizability.html][extra]]
