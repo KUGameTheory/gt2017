@@ -2,7 +2,7 @@
 #+AUTHOR: Christoph Schottmüller
 
 * News
-Please note that there will be no lecture in week 41 (October 12) in order to give you time to work on the midterm.
+Please note that there will be no lecture in week 41 (October 12) in order to give you time to work on the midterm which is posted below.
 
 * Organization
 Lectures: Thursday 10:00-13:00 in 35-3-12 (apart from first lecture which is in 26.2.21)
@@ -13,7 +13,7 @@ You are expected to *read the math handout* before the course and to *read the h
 
 ** Midterm
 The midterm is a take home exam. You have to pass the midterm in order to be admitted to the final exam. The midterm should be done in groups of up to three people.  You have the weeks 41 and 42 (mid October) to work on the midterm. Deadline for handing in is October 23, 18:00.
-# The midterm exercises are here: [[./midterm.pdf][Midterm]]
+The midterm exercises are here: [[https://github.com/KUGameTheory/gt2017/files/1366726/midterm.pdf][Midterm]]
 
 # Here is a [[./Holdliste Game Theory web.xlsx][list]] with students that are admitted to the final exam. Please, check whether you are on it and contact me if you are not (though you think you should).
 
