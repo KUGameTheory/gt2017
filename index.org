@@ -107,7 +107,7 @@ The final is an oral exam (with 20 minutes closed book preparation time).
 - L02: [[https://schottmueller.github.io/gt/L03_NashThm/Nash_thm.pdf ][slides]], [[https://schottmueller.github.io/gt/L03_NashThm/Nash_Brouwer.html][extra]]
 - L03: [[https://schottmueller.github.io/gt/L04_rationalizability/ratio.pdf][slides]], [[https://schottmueller.github.io/gt/L04_rationalizability/rationalizability.html][extra]]
 - L04: [[https://schottmueller.github.io/gt/L05_correlated_eq/corr_eq.pdf][slides]], [[https://schottmueller.github.io/gt/L05_correlated_eq/correlated_eq_solver_.html][extra]]
-- L05: [[https://github.com/KUGameTheory/gt2017/files/1343487/riskAttitudes.pdf][slides]]
+- L05: [[https://github.com/KUGameTheory/gt2017/files/1343487/riskAttitudes.pdf][slides]], [[./RiskAttitudesExercise.ipynb][solution extra exercise]]
 - L06: [[https://schottmueller.github.io/gt/L06_supermodular/supermodular.pdf][slides]], [[https://schottmueller.github.io/gt/L06_supermodular/iasus.html][extra]]
 - L07/08: [[https://schottmueller.github.io/gt/L10_11_knowledge/knowledge.pdf][slides]], [[https://schottmueller.github.io/gt/L10_11_knowledge/knowledge.html][extra]]
 - L09: [[https://schottmueller.github.io/gt/L12_global/global_games.pdf][slides]], [[https://schottmueller.github.io/gt/L12_global/global_iter.html][extra]]
