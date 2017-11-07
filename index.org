@@ -2,8 +2,7 @@
 #+AUTHOR: Christoph Schottmüller
 
 * News
-Please note that there will be no lecture in week 41 (October 12) in order to give you time to work on the midterm which is posted below.
-
+There will be no lecture on November 30 because I have to participate in an academic event that day.
 * Organization
 Lectures: Thursday 10:00-13:00 in 35-3-12 (apart from first lecture which is in 26.2.21)
 
