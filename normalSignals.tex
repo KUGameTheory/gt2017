@@ -1,0 +1,135 @@
+\documentclass[12pt,english,a4paper]{article}
+\usepackage{amsmath, eurosym, textcomp, graphicx, amsthm, amssymb,amsfonts, natbib, url, xcolor, tikz, subfig,hyperref,float}
+
+\usepackage[english]{babel} %English language if Koma script classes are used (Bibliography instead of Inhaltsverzeichnis..)
+\usepackage{inputenc}
+\usepackage[T1]{fontenc} %Encoding 
+\usepackage{ae,aecompl}%avoids the problem of faint or hardly printable output
+
+%\usepackage{lineno}
+%\usepackage{soul} % defines the command \ul{} to underline. Together with the next line the line is set on a level directly under "a" which means that f,g,y will be crossed in their lower parts
+%\setuldepth{a}
+%\usepackage{setspace} %for varied line spacing
+%\onehalfspacing % LaTeX 1.5 line spacing
+%\setstretch{1.8} %1.5 line spacing on the Microsoft Word scale
+\setlength {\parindent}{0cm}% no indenting for new paragraphs
+
+%\setlength{\parskip}{1.5ex plus 0.5ex minus 0.5ex}%flexible paragraph skipping
+
+\newtheorem{prop}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{assumption}{Assumption}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{observation}{Observation}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{plain}
+
+\newcommand{\ie}{{\it i.e. }}
+\newcommand{\eg}{{\it e.g. }}
+\newcommand{\e}{\varepsilon}
+
+\makeatletter
+\renewcommand{\section}{\@startsection{section}{1}{0mm}{-1.5\baselineskip}{0.8\baselineskip}{\normalfont\large\centering}}
+\renewcommand{\subsection}{\@startsection{subsection}{2}{0mm}{-0.1\baselineskip}{0.5\baselineskip}{\normalfont\bf\flushleft}}
+\renewcommand{\@seccntformat}[1]{\csname the#1\endcsname
+\hspace{+0mm}\large{.}\hspace{+1.9mm}}
+\renewcommand{\@seccntformat}[2]{\csname the#1\endcsname
+\hspace{+0mm}\large{.}\hspace{+1.9mm}}
+\makeatother
+
+\usepackage[top=2.7cm, bottom=2.7cm, left=2.7cm, right=2.7cm]{geometry}
+
+\def\Re{{\mathbb{R}}}
+\def\One{{\mathbb{1}}}
+
+\renewcommand{\baselinestretch}{1.5} %one half spacing
+
+\newenvironment{christoph}{\color{blue}{ }{}} %pretty cool for commenting in color so that co-author can see changes; use \christoph{balbla}
+
+\title{Normally distributed signals}
+\author{Christoph Schottm\"uller}
+
+\begin{document}
+\maketitle
+
+\section{Preliminaries}
+\label{sec:preliminaries}
+
+In the following, I denote the cdf of a standard normally distributed random variable $\theta $ by $\Phi$ and its density by $\phi$. The cdf of a normally distributed random variable $\theta $ with mean $\mu$ and variance $\sigma^2$  is denoted by $\Phi_{\mu,\sigma^2}$ and its density by $\phi_{\mu,\sigma^2}$. Recall that the normal density is
+\begin{equation}\label{eq:normalPDF}
+  \phi_{\mu,\sigma^2}(\theta )=\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(\theta -\mu)^2}{2\sigma^2}}.
+\end{equation}
+There is no closed form for the normal cdf and it is therefore best written as
+\begin{equation*}
+  \Phi_{\mu,\sigma^2}(\theta )=\int_{-\infty}^\theta \phi_{\mu,\sigma^2}(x )\,dx.
+\end{equation*}
+
+Here I will show that normal cdfs can always be converted to standard normal cdfs. More precisely,
+\begin{equation}\label{eq:transformToStandardCDF}
+  \Phi_{\mu,\sigma^2}(\theta  )=\Phi((\theta -\mu)/\sigma).
+\end{equation}
+
+We will show this by simply plugging in the normal density and then use the usualy rules for exponential functions. The crucial step is then a change of integration variables:
+
+\begin{eqnarray*}
+  \Phi_{\mu,\sigma^2}(\theta  )&=&\int_{-\infty}^\theta\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x -\mu)^2}{2\sigma^2}}\;dx\\
+                               &=&\frac{1}{\sigma}\int_{-\infty}^\theta\frac{1}{\sqrt{2\pi}}e^{-\frac{(x -\mu)^2}{2\sigma^2}}\;dx\\
+                               &=&\frac{1}{\sigma}\frac{1}{\sqrt{2\pi}}\int_{-\infty}^\theta e^{-\frac{((x -\mu)/\sigma)^2}{2}}\;dx\\
+                               &=&\frac{1}{\sigma}\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{(\theta  -\mu)/\sigma}e^{-\frac{y^2}{2}}\sigma\;dy\\
+    &=&\int_{-\infty}^{(\theta  -\mu)/\sigma}\frac{1}{\sqrt{2\pi}} e^{-\frac{y^2}{2}}\;dy\\
+  &=&\Phi\left(\frac{\theta -\mu}{\sigma}\right)
+\end{eqnarray*}
+
+The important part is the change of variables from $x$ to $y$. Note that I defined $y=(x-\mu)/\sigma$ and therefore $dy/dx=1/\sigma$ or $dx=\sigma\, dy$. Hence, I substituted $\sigma\,dy $ for $dx$ and adjusted the upper boundary of the integral as $\theta $ in terms of $x$ becomes $(\theta -\mu)/\sigma$ in terms of my new integration variable $y$.
+
+By taking derivatives in the identity (\ref{eq:transformToStandardCDF}), we get a similar relation for the pdf:
+\begin{equation*}
+  \phi_{\mu,\sigma^2}(\theta )=\frac{1}{\sigma}\phi\left(\frac{\theta -\mu}{\sigma}\right).
+\end{equation*}
+As $\phi$ is symmetric around zero, i.e. $\phi(x)=\phi(-x)$ (check (\ref{eq:normalPDF}) with $\mu=0$ and $\sigma=1$ to verify this), we can even write
+\begin{equation}\label{eq:transformToStandardPDF}
+  \phi_{\mu,\sigma^2}(\theta )=\frac{1}{\sigma}\phi\left(\frac{\theta -\mu}{\sigma}\right)=\frac{1}{\sigma}\phi\left(\frac{\mu-\theta }{\sigma}\right).
+\end{equation}
+
+
+\section{Conditional beliefs over normally distributed state with normally distributed signal}
+\label{sec:cond-beli-over}
+
+
+
+A state $r$ is distributed normally with precision (=1/variance) $\alpha$ around mean $\bar r$.   
+
+An agent $i$ does not observe the state but observes a signal $x_i=r+\varepsilon _i$ where $\varepsilon _i$ is normally distributed with precision $\beta$ and mean $0$. What are the agent's updated beliefs concerning the state $r$ after obseving $x_i$? Put differently, what is the probability that $r$ is below some number $t$?
+\begin{eqnarray*}
+  prob(r\leq t|x_i)&=&\frac{prob(r\leq t \text{ and } x_i)}{prob(x_i)}\\
+                   &=&\frac{\int_{-\infty}^t\phi_{\bar r,1/\alpha}(r) \phi_{r,1/\beta}(x_i)\;dr}{\int_{-\infty}^\infty\phi_{\bar r,1/\alpha}(r) \phi_{r,1/\beta}(x_i)\;dr}\\
+                   &=&\frac{\int_{-\infty}^t\frac{1}{\sqrt{2\pi/\alpha}}e^{-\frac{(r -\bar{r})^2}{2/\alpha}} \frac{1}{\sqrt{2\pi/\beta}}e^{-\frac{(x_i -r)^2}{2/\beta}}\,dr}{\int_{-\infty}^\infty\frac{1}{\sqrt{2\pi/\alpha}}e^{-\frac{(r -\bar{r})^2}{2/\alpha}} \frac{1}{\sqrt{2\pi/\beta}}e^{-\frac{(x_i -r)^2}{2/\beta}}\,dr}\\
+                   &=&\frac{\int_{-\infty}^te^{-\frac{(r -\bar{r})^2}{2/\alpha}} e^{-\frac{(x_i -r)^2}{2/\beta}}\,dr}{\int_{-\infty}^\infty e^{-\frac{(r -\bar{r})^2}{2/\alpha}} e^{-\frac{(x_i -r)^2}{2/\beta}}\,dr}\\
+                   &=&\frac{\int_{-\infty}^te^{-\frac{(r -\bar{r})^2}{2/\alpha}-\frac{(x_i -r)^2}{2/\beta}}\,dr}{\int_{-\infty}^\infty e^{-\frac{(r -\bar{r})^2}{2/\alpha}-\frac{(x_i -r)^2}{2/\beta}}\,dr}\\
+                   &=&\frac{\int_{-\infty}^te^{-\frac{(r -\bar{r})^2/\beta+(x_i -r)^2/\alpha}{2/(\beta*\alpha)}}\,dr}{\int_{-\infty}^\infty e^{-\frac{(r -\bar{r})^2/\beta^2+(x_i -r)^2/\alpha}{2/(\beta*\alpha)}}\,dr}\\
+                   &=&\frac{\int_{-\infty}^te^{-\frac{\alpha(r -\bar{r})^2+\beta(x_i -r)^2}{2}}\,dr}{\int_{-\infty}^\infty e^{-\frac{\alpha(r -\bar{r})^2+\beta(x_i -r)^2}{2}}\,dr}\\
+                   &=&\frac{\int_{-\infty}^te^{-\frac{r^2(\alpha+\beta)-2r(\alpha\bar{r}+\beta x_i)+\alpha\bar{r}^2+\beta x_i^2}{2}}\,dr}{\int_{-\infty}^\infty e^{-\frac{r^2(\alpha+\beta)-2r(\alpha\bar{r}+\beta x_i)+\alpha\bar{r}^2+\beta x_i^2}{2}}\,dr}\\
+                   &=&\frac{\int_{-\infty}^te^{-\frac{r^2(\alpha+\beta)-2r(\alpha\bar{r}+\beta x_i)}{2}}e^{-\frac{\alpha\bar{r}^2+\beta x_i^2}{2}}\,dr}{\int_{-\infty}^\infty e^{-\frac{r^2(\alpha+\beta)-2r(\alpha\bar{r}+\beta x_i)}{2}}e^{-\frac{\alpha\bar{r}^2+\beta x_i^2}{2}}\,dr}\\
+                   &=&\frac{\int_{-\infty}^te^{-\frac{r^2(\alpha+\beta)-2r(\alpha\bar{r}+\beta x_i)}{2}}\,dr}{\int_{-\infty}^\infty e^{-\frac{r^2(\alpha+\beta)-2r(\alpha\bar{r}+\beta x_i)}{2}}\,dr}\\
+                   &=&\frac{\int_{-\infty}^te^{-\frac{r^2-2r(\alpha\bar{r}+\beta x_i)/(\alpha+\beta)}{2/(\alpha+\beta)}}e^{-\frac{(\alpha\bar{r}^2+\beta x_i^2+2\alpha\beta\bar{r}x_i)/(\alpha+\beta)^2}{2/(\alpha+\beta)}}\,dr}{\int_{-\infty}^\infty e^{-\frac{r^2-2r(\alpha\bar{r}+\beta x_i)/(\alpha+\beta)}{2/(\alpha+\beta)}}e^{-\frac{(\alpha\bar{r}^2+\beta x_i^2+2\alpha\beta\bar{r}x_i)/(\alpha+\beta)^2}{2/(\alpha+\beta)}}\,dr}\\
+                   &=&\frac{\int_{-\infty}^te^{-\frac{\left(r-(\alpha\bar{r}+\beta x_i)/(\alpha+\beta)\right)^2}{2/(\alpha+\beta)}}\,dr}{\int_{-\infty}^\infty e^{-\frac{\left(r-(\alpha\bar{r}+\beta x_i)/(\alpha+\beta)\right)^2}{2/(\alpha+\beta)}}\,dr}\\
+                   &=&\frac{\int_{-\infty}^t \frac{1}{\sqrt{2\pi/(\alpha+\beta)}}  e^{-\frac{\left(r-(\alpha\bar{r}+\beta x_i)/(\alpha+\beta)\right)^2}{2/(\alpha+\beta)}}\,dr}{\int_{-\infty}^\infty  \frac{1}{\sqrt{2\pi/(\alpha+\beta)}} e^{-\frac{\left(r-(\alpha\bar{r}+\beta x_i)/(\alpha+\beta)\right)^2}{2/(\alpha+\beta)}}\,dr}\\
+                   &=&\frac{\int_{-\infty}^t \phi_{(\alpha\bar{r}+\beta x_i)/(\alpha+\beta),1/(\alpha+\beta)}(r)\,dr}{\int_{-\infty}^\infty \phi_{(\alpha\bar{r}+\beta x_i)/(\alpha+\beta),1/(\alpha+\beta)}(r)\,dr}= \Phi_{(\alpha\bar{r}+\beta x_i)/(\alpha+\beta),1/(\alpha+\beta)}(t).
+\end{eqnarray*}
+
+This implies that agent $i$'s posterior concerning the state $r$ is a normal distribution with expected value
+$$\mathbb{E}[r|x_i]=\frac{\alpha\bar{r}+\beta x_i}{\alpha+\beta}$$
+and precision $\alpha+\beta$. The interpretation is that the agent has two sources of information: The prior and his signal. The precision of this combined information is the sum of the two precisions. The expected state is a weighted average of the expected state based on the prior ($\bar{r}$) and the expected state based on $i$'s signal. The weights correspond to the precisions, i.e. a more precise information source receives a higher weight.
+
+
+\subsection{Conditional belief over other agents' signals}
+\label{sec:cond-beli-over-1}
+
+Let there be many agents and let their signals be independnet conditional on the true state. That is all the $\varepsilon_i$s are independent. We can then ask what, given $x_i$, agent $i$'s belief is concerning $x_j$.
+
+We just showed that for agent $i$ the state $r$ is a normally distributed random variable with mean $\rho_i=\frac{\alpha\bar{r}+\beta x_i}{\alpha+\beta}$ and precision $\alpha+\beta$. Agent $j$'s signal is $x_j=r+\varepsilon _j$. That is, $x_j$ is the sum of two normally distributed random variables: $r\sim\mathcal{N}(\rho_i,1/(\alpha+\beta))$ and $\varepsilon _j\sim\mathcal{N}(0,1/\beta)$ (where the distributions are conditional on $i$'s signal). Note that $\varepsilon _j$ is independent of $r$. The sum of two independently and normally distributed random variables is itself normal with expectation equal to the sum of the expectations and variance equal to the sum of the variances.\footnote{See \url{https://en.wikipedia.org/wiki/Sum_of_normally_distributed_random_variables} for several proofs of this.} Therefore, agent $i$'s belief, given $x_i$, concerning $j$'s signal is that $x_j\sim\mathcal{N}(\rho_i,\frac{1}{\alpha+\beta}+\frac{1}{\beta})$.
+
+
+
+\end{document}
