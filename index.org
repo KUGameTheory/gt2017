@@ -94,9 +94,6 @@ The final is an oral exam (with 20 minutes closed book preparation time).
 - top trading cycles algorithm
 - reading: Abdulkadiroglu and  Sönmez (2003)
 
-*** Lecture 13: Assignment problems
-- position auctions
-- reading: Varian (2007), (supplementary: Shapley and Shubik (1971))
 
 * Material
 
