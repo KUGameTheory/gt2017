@@ -1,10 +1,20 @@
 #+TITLE: Game Theory 2017
 #+AUTHOR: Christoph Schottmüller
 
-* News
-There will be no lecture on November 30 because I have to participate in an academic event that day.
+* Exam
+The exam is planned for January 22nd-25th. Some administrative information:
+- preparation is closed book (no notes, books, electronic equipment etc.)
+- if you are not there when your name is called, you unfortunately fail
+- no electronic equipment (mobile phones, tablets, smart watches etc.) is allowed during preparation or examination; secure storage possibilities for such items  are /not/ provided.
 
-The exam is planned for January 22nd-25th. (These dates are, of course, only official when the study and exam administration publishes them.)
+For the exam you should expect the following:
+- you randomly draw a question
+- you have 15-20 minutes preparation time
+- you are examined for 15 minutes and receive the grade afterwards; you can present what you prepared and you should expect some follow up questions, i.e. the examination is not necessarily restricted to the questions you drew.
+
+Exam questions usually have 2-4 subquestions. One subquestion is often about explaining concepts and results covered in the lecture. One subquestion is often an exercise similar to those done in class. Sometimes you are asked to link concepts. You do not have to know all the proofs we did by heart but you should know the main idea; in particular, you should be able to explain why a result holds.
+You are responsible for the time management, i.e. for covering all subquestions within the 15 minutes. In the interest of time, it can be better to tell us immediately if you did not understand a subquestion. Sometimes we can then resolve the misunderstanding. 
+
 * Organization
 Lectures: Thursday 10:00-13:00 in 35-3-12 (apart from first lecture which is in 26.2.21)
 
